@@ -1,0 +1,134 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:#121212;
+    font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    color: white;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 12px;
+    margin-top: 20px ;
+
+}
+
+
+ul.nav-content {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+ul.nav-login {
+    display: flex;
+    justify-content: end;
+
+}
+
+
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.content {
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    max-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #fafafa;
+  }
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.dud {
+    color: #757575;
+  }
+
+.btn-group {
+    position: relative;
+    top: 100px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    margin-top: 5%;
+
+}
+
+.btn-login{
+    display: block;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 17px;
+    text-align: center;
+    padding: 5px 15px  5px 15px;
+    margin-top: -5px;
+    box-shadow: 0 12px 16px 0 rgba(114, 94, 94, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn-signin {
+    padding: 8px 20px 8px 20px;
+    border: 0.5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    border-color: rgb(177, 176, 176);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 16px  rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn-start {
+    padding: 8px 20px 8px 20px;
+    border: 0.5px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: rgb(177, 176, 176);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 16px  rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn-start:hover{
+    padding: 10px 20px 10px 20px;
+    color: aqua; }
+
+.btn-signin:hover{
+    padding: 10px 20px 10px 20px;
+}

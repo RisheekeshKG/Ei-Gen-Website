@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ei- Gen </title>
+    <link rel="stylesheet" href="./homestyle.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-content">
+            <li><a href="https://www.google.com">Home</a></li>
+            <li><a href="">Why Ei-Gen</a></li>
+            <li><a href="">Configure Bot</a></li>
+            <li><a href ="">Invite Bot</a></li>
+            
+        </ul>
+        <ul class="nav-login">
+            <li><button class="btn-login" style="justify-content: end;"> Login </button></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="text"></div>
+    </div>
+    <div class="btn-group">
+    <button class="btn-start"> Get Started </button>
+    <button class="btn-signin"> Sign In  </button>
+    </div>
+
+    <footer>
+        
+    </footer>
+    <script src="scramble.js"></script>
+    <script>
+    
+    
+        const phrases = ['Hello Mate,', 'Ever Thought of AI-Powered Discord Bots?', 'Try Ei-Gen ',  'You Won\'t Regret it :)'];
+        const el = document.querySelector('.text');
+        const fx = new TextScramble(el);
+        let counter = 0;
+        
+        const next = () => {
+          fx.setText(phrases[counter]).then(() => {
+            setTimeout(next, 400);
+          });
+          counter = (counter + 1) % phrases.length;
+        };
+        
+        next();
+            </script>
+</body>
+</html>
